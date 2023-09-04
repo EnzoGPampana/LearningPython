@@ -1,7 +1,23 @@
-# Write Number in Expanded Form
-# You will be given a number and you will need to return it as a string in Expanded Form. For example:
+# Quarter of the year
+# Given a month as an integer from 1 to 12, return to which quarter of the year it belongs as an integer number.
+# For example: month 2 (February), is part of the first quarter; month 6 (June), 
+# is part of the second quarter; and month 11 (November), is part of the fourth quarter.
 
-# expanded_form(12) # Should return '10 + 2'
-# expanded_form(42) # Should return '40 + 2'
-# expanded_form(70304) # Should return '70000 + 300 + 4'
-# NOTE: All numbers will be whole numbers greater than 0.
+# Constraint:
+# 1 <= month <= 12
+
+month = 12
+
+def quarter_of(month):
+    if month < 1 or month > 12:
+        return "Incorrect month";
+    elif month <= 3:
+        return 1
+    elif month > 3 and month <= 6:
+        return 2
+    elif month > 6 and month <= 9:
+        return 3
+    else:
+        return 4
+
+print (quarter_of(month))
