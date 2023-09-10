@@ -7,8 +7,8 @@
 #  [2, 1, 0]]
           
 board = [[0, 0, 1], 
-         [0, 0, 1], 
-         [2, 0, 0]] 
+         [0, 1, 2], 
+         [2, 1, 0]] 
 
 
 
@@ -26,11 +26,7 @@ def is_solved(board):
     elif board[0][2] == board[1][1] == board[2][0] and board[0][2] != 0:
         return board[0][2]
     
-    for row in board:
-        for i in row:
-            if i == 0:
-                return -1
-            
-    return 0
+
+
             
 print (is_solved(board))
