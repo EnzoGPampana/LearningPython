@@ -3,7 +3,7 @@
 #The input string will only consist of lower case letters and/or spac
 
 vowels = ["A", "E", "I", "O", "U", "a", "e", "i", "o", "u"]
-string = "ENZoooooooooooooooooooiiiiiiiiiieeeeeeeeeeeaaaaaaaaaO"    
+string = "ENZO"    
 n = 0
 
 for i in string: 
